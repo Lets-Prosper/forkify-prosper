@@ -8,7 +8,6 @@ class BookmarkView extends View {
 
   addHandlerRender(handler) {
     window.addEventListener('load', handler);
-    console.log('test');
   }
 
   _generateMarkup() {
