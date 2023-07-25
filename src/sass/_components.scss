@@ -55,6 +55,20 @@
   }
 }
 
+.current-page {
+  margin-bottom: 1.4rem;
+  align-self: center;
+  .btn-new {
+    color: $color-grey-dark-2;
+    cursor: default;
+
+    &:hover {
+      color: $color-grey-dark-2;
+      background-color: $color-grey-light-1;
+    }
+  }
+}
+
 .btn--inline {
   color: $color-primary;
   font-size: 1.3rem;

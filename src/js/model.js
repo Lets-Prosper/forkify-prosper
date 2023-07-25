@@ -48,6 +48,7 @@ export const loadSearchResults = async function (query) {
   try {
     state.search.query = query;
     const data = await AJAX(`${API_URL}?search=${query}&key=${KEY}`);
+    console.log(data);
     state.search.result = data.data.recipes.map(rec => {
       return {
         id: rec.id,
@@ -70,6 +71,13 @@ export const getSearchResultPage = function (page = state.search.page) {
   const end = page * state.search.resultPerPage;
 
   return state.search.result.slice(start, end);
+};
+
+export const getSearchResultLength = function () {
+  return {
+    currPage: state.search.page,
+    numPage: state.search.result.length,
+  };
 };
 
 export const updateServings = function (newServings) {
