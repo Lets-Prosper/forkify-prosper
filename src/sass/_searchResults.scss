@@ -35,8 +35,14 @@
   padding: 0 3.5rem;
   margin-top: 4rem;
 
-  .twitter-link:link,
-  .twitter-link:visited {
-    color: $color-grey-dark-2;
+  .github-link {
+    text-decoration: none;
+    font-size: inherit;
+    color: $color-grey-dark-1;
   }
+}
+
+.copyright:last-child {
+  margin-top: 0;
+  margin-left: 2.4rem;
 }
